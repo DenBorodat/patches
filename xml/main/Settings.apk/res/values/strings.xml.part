@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="powersave_mode_settings">"Экономия батареи</string>
+    <string name="powersave_mode_settings_summary">Настройки для экономии энергии батареи</string>
+</resources>

@@ -1,0 +1,6 @@
+appfile <ThemeManager.apk>;
+
+# Free Themes
+methodreplace "%smali%/miui/resourcebrowser/view/ResourceOperationHandler.smali" ".method public isPermanentRights()Z" "%here%/free/isPermanentRights.m";
+methodreplace "%smali%/miui/resourcebrowser/view/ResourceOperationHandler.smali" ".method protected isLegal()Z" "%here%/free/isLegal.m";
+methodreplace "%smali%/miui/resourcebrowser/view/ResourceOperationHandler.smali" ".method public isAuthorizedResource()Z" "%here%/free/isAuthorizedResource.m";

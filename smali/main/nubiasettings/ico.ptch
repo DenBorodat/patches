@@ -1,0 +1,20 @@
+appfile <nubiasettings.apk>;
+
+# Display icons in additional settings
+replaceinfile "%res%/xml/stocksettings.xml"    "<Preference android:title="@string/feature" android:key="feature" android:summary="@string/feature_summary">" 		"<Preference android:icon="@drawable/feature" android:title="@string/feature" android:key="feature" android:summary="@string/feature_summary">";
+replaceinfile "%res%/xml/othersettings.xml"    "<Preference android:title="@string/AppKill" 		"<Preference android:icon="@drawable/AppKill" android:title="@string/AppKill" android:summary="@string/AppKill_summary";
+replaceinfile "%res%/xml/othersettings.xml"	"<CheckBoxPreference android:title="@string/keyheadset"	"<CheckBoxPreference android:icon="@drawable/keyheadset" android:title="@string/keyheadset";
+replaceinfile "%res%/xml/othersettings.xml"	"<CheckBoxPreference android:title="@string/power_sound_title"	"<CheckBoxPreference android:icon="@drawable/power_sound_title" android:title="@string/power_sound_title";
+replaceinfile "%res%/xml/othersettings.xml" "<Preference android:title="@string/mipop" "<Preference android:icon="@drawable/mipop" android:title="@string/mipop";
+replaceinfile "%res%/xml/othersettings.xml" "<Preference android:title="@string/SRSTruMedia" "<Preference android:icon="@drawable/SRSTruMedia" android:title="@string/SRSTruMedia";
+replaceinfile "%res%/xml/othersettings.xml" "<Preference android:title="@string/donate_title" "<Preference android:icon="@drawable/donate_title" android:title="@string/donate_title";
+replaceinfile "%res%/xml/stocksettings.xml" "<ListPreference android:entries="@array/home_layout_switch_entries" android:title="@string/home_layout_switch_title" "<ListPreference android:icon="@drawable/home_layout_switch_entries" android:entries="@array/home_layout_switch_entries" android:title="@string/home_layout_switch_title";
+replaceinfile "%res%/xml/stocksettings.xml"    "<Preference android:title="@string/DisplaySettings" android:key="DisplaySettings" android:summary="@string/DisplaySettings_summary">" 		"<Preference android:icon="@drawable/DisplaySettings" android:title="@string/DisplaySettings" android:key="DisplaySettings" android:summary="@string/DisplaySettings_summary">";
+replaceinfile "%res%/xml/stocksettings.xml" "<ListPreference android:entries="@array/camera_entries" android:title="@string/camera_change_tittle" "<ListPreference android:icon="@drawable/camera_change_tittle" android:entries="@array/camera_entries" android:title="@string/camera_change_tittle";
+replaceinfile "%res%/xml/stocksettings.xml" "<CheckBoxPreference android:key="miui_gallery" "<CheckBoxPreference android:icon="@drawable/miui_gallery" android:key="miui_gallery";
+replaceinfile "%res%/xml/stocksettings.xml" "<CheckBoxPreference android:title="@string/double_home" "<CheckBoxPreference android:icon="@drawable/double_home" android:title="@string/double_home" android:summary="@string/double_home_summary";
+replaceinfile "%res%/xml/stocksettings.xml" "<CheckBoxPreference android:title="@string/camera_music" "<CheckBoxPreference android:icon="@drawable/camera_music" android:title="@string/camera_music";
+replaceinfile "%res%/xml/stocksettings.xml" "<CheckBoxPreference android:title="@string/open_music" "<CheckBoxPreference android:icon="@drawable/open_music" android:title="@string/open_music";
+replaceinfile "%res%/xml/stocksettings.xml" "<CheckBoxPreference android:title="@string/open_boot" "<CheckBoxPreference android:icon="@drawable/open_boot" android:title="@string/open_boot";
+replaceinfile "%res%/xml/othersettings.xml"	"<CheckBoxPreference android:title="@string/keylight" android:key="key_light" android:defaultValue="false" />" "<CheckBoxPreference android:icon="@drawable/keylight" android:title="@string/keylight" android:key="key_light" android:defaultValue="false" />";
+replaceinfile "%res%/xml/othersettings.xml" "<PreferenceScreen android:enabled="false" android:title="@string/version" android:summary="@string/version_summary" />" "<PreferenceScreen android:enabled="true" android:title="@string/version" android:summary="@string/version_summary" android:data="@string/version_link" />"

@@ -1,0 +1,6 @@
+appfile <Services.jar>;
+
+# Smart Wake
+methodreplace "%smali%/com/android/server/power/PowerManagerService.smali" 				".method private static wakefulnessToString(I)Ljava/lang/String;" 			"%here%/methods/wakefulnessToString.m";
+methodreplace "%smali%/com/android/server/power/PowerManagerService.smali" 				".method static synthetic access$3000(Lcom/android/server/power/PowerManagerService;)V" "%here%/methods/3000.m";
+methodreplace "%smali%/com/android/server/power/PowerManagerService$BootCompletedReceiver.smali" 	".method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V" 		"%here%/methods/onReceive.m";
